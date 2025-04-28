@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Despedida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Música de fondo: empieza cuando toque -->
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2021/09/20/audio_a3132f0ab1.mp3?filename=romantic-8703.mp3" type="audio/mp3">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <div class="container">
+    <h1>Un mensaje para ti ✉️</h1>
+    <button id="talkBtn">Hablar</button>
+
+    <div id="question" class="hidden">
+      <p>¿Quieres saber por qué quiero alejarme?</p>
+      <div class="button-group">
+        <button id="yesBtn">Sí</button>
+        <button id="noBtn">Prefiero no saber</button>
+      </div>
+    </div>
+
+    <div id="letter" class="hidden">
+      <p id="letterText"></p>
+    </div>
+
+    <footer>
+      © 2025 Desarrollado por Alex Rendón
+    </footer>
+  </div>
+
+  <audio id="endSound">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_24f96aa1c1.mp3?filename=peaceful-ambience-22063.mp3" type="audio/mp3">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
